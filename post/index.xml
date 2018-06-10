@@ -1,22 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>I, code</title>
-    <link>https://www.sapuglha.com/</link>
-    <description>Recent content on I, code</description>
+    <title>Posts on I, code</title>
+    <link>https://www.sapuglha.com/post/</link>
+    <description>Recent content in Posts on I, code</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 11 Jun 2018 00:41:27 -0600</lastBuildDate><atom:link href="https://www.sapuglha.com/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>About</title>
-      <link>https://www.sapuglha.com/about/</link>
-      <pubDate>Wed, 13 Jun 2018 20:18:02 -0600</pubDate>
-      
-      <guid>https://www.sapuglha.com/about/</guid>
-      <description>Imagine a Web 1.0 animated gif here.
-Under construction. Link to heading </description>
-    </item>
-    
+    <lastBuildDate>Mon, 11 Jun 2018 00:41:27 -0600</lastBuildDate><atom:link href="https://www.sapuglha.com/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How I Git</title>
       <link>https://www.sapuglha.com/post/2018-06-11-how-i-git/</link>
@@ -27,15 +17,6 @@ Under construction. Link to heading </description>
     </item>
     
     <item>
-      <title>From Native to React Native</title>
-      <link>https://www.sapuglha.com/talk/2018-05-29-react-native-clio/</link>
-      <pubDate>Mon, 28 May 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.sapuglha.com/talk/2018-05-29-react-native-clio/</guid>
-      <description>The mobile team at Clio shared their experiences while working on a time-boxed project to explore React Native&amp;rsquo;s capabilities.</description>
-    </item>
-    
-    <item>
       <title>Android Development setup on a Mac</title>
       <link>https://www.sapuglha.com/post/2018-02-10-android-development-setup-mac/</link>
       <pubDate>Sat, 10 Feb 2018 00:00:00 -0600</pubDate>
@@ -43,15 +24,6 @@ Under construction. Link to heading </description>
       <guid>https://www.sapuglha.com/post/2018-02-10-android-development-setup-mac/</guid>
       <description>Originally published on http://sapuglha.wordpress.com
 I created this shell script to automatize the installation of my environment.</description>
-    </item>
-    
-    <item>
-      <title>Espresso Tests</title>
-      <link>https://www.sapuglha.com/talk/2017-07-19-espresso-tests/</link>
-      <pubDate>Wed, 19 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.sapuglha.com/talk/2017-07-19-espresso-tests/</guid>
-      <description>Espresso tests pain points.</description>
     </item>
     
     <item>
@@ -67,16 +39,6 @@ This is the best and succinct I could find, kudos to the author:
 http://nsbogan.com/mobile%20ci/2015/02/01/jenkins-ci-server-on-osx
 I&amp;rsquo;d just like to add a couple things I had to do in order to make it work:
 Go with the LaunchAgent, easy and good control on start/stop Add the log file configuration to the plist file Fix the .</description>
-    </item>
-    
-    <item>
-      <title>Android Wear development overview</title>
-      <link>https://www.sapuglha.com/talk/2015-02-19-android-wear/</link>
-      <pubDate>Thu, 19 Feb 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.sapuglha.com/talk/2015-02-19-android-wear/</guid>
-      <description>Concepts related to Android Wear development.
-platform benefits and usage device constraints code sample </description>
     </item>
     
   </channel>
