@@ -11,10 +11,10 @@
 
     <base href="https://www.sapuglha.com/">
     <title>
-  Categories · I, code
+  Jenkins Server Setup on Macos X · I, code
 </title>
 
-    <link rel="canonical" href="https://www.sapuglha.com/categories/">
+    <link rel="canonical" href="https://www.sapuglha.com/post/2016-01-30-jenkins-server-setup-on-macos-x/">
 
     <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
     <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
@@ -25,9 +25,6 @@
     <link rel="icon" type="image/png" href="https://www.sapuglha.com/images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://www.sapuglha.com/images/favicon-16x16.png" sizes="16x16">
 
-    
-      <link href="https://www.sapuglha.com/categories/index.xml" rel="alternate" type="application/rss+xml" title="I, code" />
-      <link href="https://www.sapuglha.com/categories/index.xml" rel="feed" type="application/rss+xml" title="I, code" />
     
 
     <meta name="generator" content="Hugo 0.42.1" />
@@ -63,18 +60,36 @@
 
       <div class="content">
         
-  <section class="container list">
-  <h1 class="title">Categories</h1>
-  <ul>
-    
-  </ul>
-  
+  <section class="container page">
+  <article>
+    <header>
+      <h1>Jenkins Server Setup on Macos X</h1>
+    </header>
 
+    <ul>
+<li><p><em>Originally published on <a href="https://sapuglha.wordpress.com">https://sapuglha.wordpress.com</a></em></p></li>
 
+<li><p>2018-06-13 <em>Fixed linked article URL</em></p></li>
+</ul>
 
+<p>There are countless posts with instructions on how to do this, I won&rsquo;t create another.</p>
 
+<p>This is the best and succinct I could find, kudos to the author:</p>
 
+<p><em><a href="http://nsbogan.com/mobile%20ci/2015/02/01/jenkins-ci-server-on-osx">http://nsbogan.com/mobile%20ci/2015/02/01/jenkins-ci-server-on-osx</a></em></p>
 
+<p>I&rsquo;d just like to add a couple things I had to do in order to make it work:</p>
+
+<p>Go with the LaunchAgent, easy and good control on start/stop
+Add the log file configuration to the plist file
+Fix the <strong>.jenkins/log</strong> directory permissions, mine was failing and I could not figure out why, if it failed to launch, it’s most likely due to a log file not being owned by the Jenkins user. You can verify this by typing:</p>
+
+<ul>
+<li><strong>$ ls -l ~/.jenkins</strong> to see who owns the <strong>log</strong> directory. If it says <strong>root</strong>, you need to change it to the Jenkins user.</li>
+<li>Enter the following to change ownership: <strong>$ sudo chown -R <the user name> ~/.jenkins/log</strong></li>
+</ul>
+
+  </article>
 </section>
 
 
