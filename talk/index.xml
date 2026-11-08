@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Talks on I, code</title>
+		<link>https://www.sapuglha.com/talk/</link>
+		<description>Recent content in Talks on I, code</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 28 May 2018 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://www.sapuglha.com/talk/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>From Native to React Native</title>
+				<link>https://www.sapuglha.com/talk/2018-05-29-react-native-clio/</link>
+				<pubDate>Mon, 28 May 2018 00:00:00 +0000</pubDate>
+				<guid>https://www.sapuglha.com/talk/2018-05-29-react-native-clio/</guid>
+				<description>&lt;p&gt;The mobile team at &lt;a href=&#34;http://www.clio.com&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Clio&lt;/a&gt; shared their experiences while working on a time-boxed project to explore React Native&amp;rsquo;s capabilities.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Espresso Tests</title>
+				<link>https://www.sapuglha.com/talk/2017-07-19-espresso-tests/</link>
+				<pubDate>Wed, 19 Jul 2017 00:00:00 +0000</pubDate>
+				<guid>https://www.sapuglha.com/talk/2017-07-19-espresso-tests/</guid>
+				<description>&lt;p&gt;Espresso tests pain points.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Android Wear development overview</title>
+				<link>https://www.sapuglha.com/talk/2015-02-19-android-wear/</link>
+				<pubDate>Thu, 19 Feb 2015 00:00:00 +0000</pubDate>
+				<guid>https://www.sapuglha.com/talk/2015-02-19-android-wear/</guid>
+				<description>&lt;p&gt;Concepts related to Android Wear development.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;platform benefits and usage&lt;/li&gt;&#xA;&lt;li&gt;device constraints&lt;/li&gt;&#xA;&lt;li&gt;code sample&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+			</item>
+	</channel>
+</rss>

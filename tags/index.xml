@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Tags on I, code</title>
+		<link>https://www.sapuglha.com/tags/</link>
+		<description>Recent content in Tags on I, code</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 05 Nov 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://www.sapuglha.com/tags/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>AI</title>
+				<link>https://www.sapuglha.com/tags/ai/</link>
+				<pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.sapuglha.com/tags/ai/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Digital Autonomy</title>
+				<link>https://www.sapuglha.com/tags/digital-autonomy/</link>
+				<pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.sapuglha.com/tags/digital-autonomy/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Llm</title>
+				<link>https://www.sapuglha.com/tags/llm/</link>
+				<pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.sapuglha.com/tags/llm/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Git</title>
+				<link>https://www.sapuglha.com/tags/git/</link>
+				<pubDate>Mon, 11 Jun 2018 00:41:27 -0600</pubDate>
+				<guid>https://www.sapuglha.com/tags/git/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>MacOS</title>
+				<link>https://www.sapuglha.com/tags/macos/</link>
+				<pubDate>Mon, 11 Jun 2018 00:41:27 -0600</pubDate>
+				<guid>https://www.sapuglha.com/tags/macos/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Shell Scripting</title>
+				<link>https://www.sapuglha.com/tags/shell-scripting/</link>
+				<pubDate>Mon, 11 Jun 2018 00:41:27 -0600</pubDate>
+				<guid>https://www.sapuglha.com/tags/shell-scripting/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Android</title>
+				<link>https://www.sapuglha.com/tags/android/</link>
+				<pubDate>Sat, 10 Feb 2018 00:00:00 -0600</pubDate>
+				<guid>https://www.sapuglha.com/tags/android/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Development</title>
+				<link>https://www.sapuglha.com/tags/development/</link>
+				<pubDate>Sat, 10 Feb 2018 00:00:00 -0600</pubDate>
+				<guid>https://www.sapuglha.com/tags/development/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Scripting</title>
+				<link>https://www.sapuglha.com/tags/scripting/</link>
+				<pubDate>Sat, 10 Feb 2018 00:00:00 -0600</pubDate>
+				<guid>https://www.sapuglha.com/tags/scripting/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Automation</title>
+				<link>https://www.sapuglha.com/tags/automation/</link>
+				<pubDate>Sat, 30 Jan 2016 00:00:00 -0600</pubDate>
+				<guid>https://www.sapuglha.com/tags/automation/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Jenkins</title>
+				<link>https://www.sapuglha.com/tags/jenkins/</link>
+				<pubDate>Sat, 30 Jan 2016 00:00:00 -0600</pubDate>
+				<guid>https://www.sapuglha.com/tags/jenkins/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Server Setup</title>
+				<link>https://www.sapuglha.com/tags/server-setup/</link>
+				<pubDate>Sat, 30 Jan 2016 00:00:00 -0600</pubDate>
+				<guid>https://www.sapuglha.com/tags/server-setup/</guid>
+				<description></description>
+			</item>
+	</channel>
+</rss>

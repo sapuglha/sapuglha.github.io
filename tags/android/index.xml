@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Android on I, code</title>
+		<link>https://www.sapuglha.com/tags/android/</link>
+		<description>Recent content in Android on I, code</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 10 Feb 2018 00:00:00 -0600</lastBuildDate>
+		
+			<atom:link href="https://www.sapuglha.com/tags/android/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Android Development setup on a Mac</title>
+				<link>https://www.sapuglha.com/posts/2018-02-10-android-development-setup-mac/</link>
+				<pubDate>Sat, 10 Feb 2018 00:00:00 -0600</pubDate>
+				<guid>https://www.sapuglha.com/posts/2018-02-10-android-development-setup-mac/</guid>
+				<description>&lt;p&gt;&lt;em&gt;Originally published on &lt;a href=&#34;http://sapuglha.wordpress.com&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://sapuglha.wordpress.com&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;I created &lt;a href=&#34;https://gist.github.com/sapuglha/803bd312ec6df146c87aedfb00d1e562&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this shell script&lt;/a&gt; to automatize the installation of my environment.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

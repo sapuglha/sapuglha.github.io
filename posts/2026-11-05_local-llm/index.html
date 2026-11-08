@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Running a local LLM provider and agent · I, code
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Tiago Silva">
+<meta name="description" content="
+  Goals
+  
+    
+    Link to heading
+  
+
+I have been using frontier models with Claude and Codex for over a year. They are powerful and effective.
+However, I value digital autonomy and wish to avoid total dependence on a large corporation for LLM access, in addition to always needing an internet connection.
+While my setup may not match theirs in terms of raw power or speed, keeping my personal data local is a requirement for me.">
+<meta name="keywords" content="blog,developer,personal">
+
+
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Running a local LLM provider and agent">
+	<meta name="twitter:description" content="Goals Link to heading I have been using frontier models with Claude and Codex for over a year. They are powerful and effective.
+However, I value digital autonomy and wish to avoid total dependence on a large corporation for LLM access, in addition to always needing an internet connection.
+While my setup may not match theirs in terms of raw power or speed, keeping my personal data local is a requirement for me.">
+
+<meta property="og:url" content="https://www.sapuglha.com/posts/2026-11-05_local-llm/">
+	<meta property="og:site_name" content="I, code">
+	<meta property="og:title" content="Running a local LLM provider and agent">
+	<meta property="og:description" content="Goals Link to heading I have been using frontier models with Claude and Codex for over a year. They are powerful and effective.
+However, I value digital autonomy and wish to avoid total dependence on a large corporation for LLM access, in addition to always needing an internet connection.
+While my setup may not match theirs in terms of raw power or speed, keeping my personal data local is a requirement for me.">
+	<meta property="og:locale" content="en">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+		<meta property="article:published_time" content="2026-11-05T00:00:00+00:00">
+		<meta property="article:modified_time" content="2026-11-05T00:00:00+00:00">
+		<meta property="article:tag" content="AI">
+		<meta property="article:tag" content="Llm">
+		<meta property="article:tag" content="Digital Autonomy">
+
+
+
+
+<link rel="canonical" href="https://www.sapuglha.com/posts/2026-11-05_local-llm/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.5e94c1acf7aa2066035cf2764ae3e4fe39db101d68b870f919966100d51fb861.css" integrity="sha256-XpTBrPeqIGYDXPJ2SuPk/jnbEB1ouHD5GZZhANUfuGE=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.ad48f476275974885bdc03d5251e3cdbe1678c54a63ff772376b0ed2adc468dd.css" integrity="sha256-rUj0didZdIhb3APVJR482&#43;FnjFSmP/dyN2sO0q3EaN0=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="https://www.sapuglha.com/">
+      I, code
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/talk/">Talks</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://www.sapuglha.com/posts/2026-11-05_local-llm/">
+              Running a local LLM provider and agent
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2026-11-05T00:00:00Z">
+                November 5, 2026
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              2-minute read
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/ai/">AI</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/llm/">Llm</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/digital-autonomy/">Digital Autonomy</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      
+
+
+      <div class="post-content">
+        
+        <h2 id="goals">
+  Goals
+  <a class="heading-link" href="#goals">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>I have been using frontier models with Claude and Codex for over a year. They are powerful and effective.</p>
+<p>However, I value digital autonomy and wish to avoid total dependence on a large corporation for LLM access, in addition to always needing an internet connection.</p>
+<p>While my setup may not match theirs in terms of raw power or speed, keeping my personal data local is a requirement for me.</p>
+<h2 id="self-hosting-model-inference">
+  Self-hosting Model Inference
+  <a class="heading-link" href="#self-hosting-model-inference">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>My machine is a Macbook Pro M1 Max with 32GB of RAM. Although it lacks a dedicated AI GPU, its unified memory allows for a workable setup.</p>
+<p>I chose <a href="https://omlx.ai"  class="external-link" target="_blank" rel="noopener">oMLX</a> as the provider. Since it leverages RAM and SSD to enhance performance, it was a suitable workaround for my hardware limitations.</p>
+<h2 id="model">
+  Model
+  <a class="heading-link" href="#model">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>I am still exploring options. With oMLX and its manager interface, which pulls model information from HuggingFace, I can easily filter models compatible with my hardware.</p>
+<p>So far, I have tested these:</p>
+<ul>
+<li>gemma-4-E4B-it-MLX-4bit</li>
+<li>Qwen3.8-27B-MLX-4bit</li>
+</ul>
+<p>oMLX also simplified model optimization with a single button press.</p>
+<p>Here is the dashboard for <strong>Average Speed</strong> while using Gemma4.</p>
+<p><img src="llm_performance.png" alt="dashboard"></p>
+<p>While the speed is not exceptional, I am satisfied with the performance.</p>
+<h2 id="agent-harness">
+  Agent Harness
+  <a class="heading-link" href="#agent-harness">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>For this part, I decided to use <a href="https://opencode.ai"  class="external-link" target="_blank" rel="noopener">OpenCode</a>.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2026
+     Tiago Silva 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

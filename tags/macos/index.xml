@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>MacOS on I, code</title>
+		<link>https://www.sapuglha.com/tags/macos/</link>
+		<description>Recent content in MacOS on I, code</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 11 Jun 2018 00:41:27 -0600</lastBuildDate>
+		
+			<atom:link href="https://www.sapuglha.com/tags/macos/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>How I Git</title>
+				<link>https://www.sapuglha.com/posts/2018-06-11-how-i-git/</link>
+				<pubDate>Mon, 11 Jun 2018 00:41:27 -0600</pubDate>
+				<guid>https://www.sapuglha.com/posts/2018-06-11-how-i-git/</guid>
+				<description>Blah</description>
+			</item>
+			<item>
+				<title>Android Development setup on a Mac</title>
+				<link>https://www.sapuglha.com/posts/2018-02-10-android-development-setup-mac/</link>
+				<pubDate>Sat, 10 Feb 2018 00:00:00 -0600</pubDate>
+				<guid>https://www.sapuglha.com/posts/2018-02-10-android-development-setup-mac/</guid>
+				<description>&lt;p&gt;&lt;em&gt;Originally published on &lt;a href=&#34;http://sapuglha.wordpress.com&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://sapuglha.wordpress.com&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;I created &lt;a href=&#34;https://gist.github.com/sapuglha/803bd312ec6df146c87aedfb00d1e562&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this shell script&lt;/a&gt; to automatize the installation of my environment.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Jenkins Server Setup on Macos X</title>
+				<link>https://www.sapuglha.com/posts/2016-01-30-jenkins-server-setup-on-macos-x/</link>
+				<pubDate>Sat, 30 Jan 2016 00:00:00 -0600</pubDate>
+				<guid>https://www.sapuglha.com/posts/2016-01-30-jenkins-server-setup-on-macos-x/</guid>
+				<description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;em&gt;Originally published on &lt;a href=&#34;https://sapuglha.wordpress.com&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://sapuglha.wordpress.com&lt;/a&gt;&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;2018-06-13 &lt;em&gt;Fixed linked article URL&lt;/em&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;There are countless posts with instructions on how to do this, I won&amp;rsquo;t create another.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://web.archive.org/web/20180630223730/http://nsbogan.com/mobile%20ci/2015/02/01/jenkins-ci-server-on-osx&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;This is the best and succinct I could find&lt;/a&gt;, kudos to the author&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;d just like to add a couple things I had to do in order to make it work:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Go with the LaunchAgent, easy and good control on start/stop&lt;/li&gt;&#xA;&lt;li&gt;Add the log file configuration to the plist file&lt;/li&gt;&#xA;&lt;li&gt;Fix the &lt;code&gt;.jenkins/log&lt;/code&gt; directory permissions, mine was failing and I could not figure out why, if it failed to launch, it’s most likely due to a log file not being owned by the Jenkins user. You can verify this by doing the following:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;$ ls -l ~/.jenkins&lt;/code&gt; to see who owns the &lt;strong&gt;log&lt;/strong&gt; directory. If it says &lt;code&gt;root&lt;/code&gt;, you need to change it to the Jenkins user.&lt;/li&gt;&#xA;&lt;li&gt;Enter the following to change ownership: &lt;code&gt;$ sudo chown -R &amp;lt;the user name&amp;gt; ~/.jenkins/log&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+			</item>
+	</channel>
+</rss>

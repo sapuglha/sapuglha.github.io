@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Digital Autonomy on I, code</title>
+		<link>https://www.sapuglha.com/tags/digital-autonomy/</link>
+		<description>Recent content in Digital Autonomy on I, code</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 05 Nov 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://www.sapuglha.com/tags/digital-autonomy/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Running a local LLM provider and agent</title>
+				<link>https://www.sapuglha.com/posts/2026-11-05_local-llm/</link>
+				<pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+				<guid>https://www.sapuglha.com/posts/2026-11-05_local-llm/</guid>
+				<description>&lt;h2 id=&#34;goals&#34;&gt;&#xA;  Goals&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#goals&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;I have been using frontier models with Claude and Codex for over a year. They are powerful and effective.&lt;/p&gt;&#xA;&lt;p&gt;However, I value digital autonomy and wish to avoid total dependence on a large corporation for LLM access, in addition to always needing an internet connection.&lt;/p&gt;&#xA;&lt;p&gt;While my setup may not match theirs in terms of raw power or speed, keeping my personal data local is a requirement for me.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>
