@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Git on I, code</title>
+		<link>https://www.sapuglha.com/tags/git/</link>
+		<description>Recent content in Git on I, code</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 11 Jun 2018 00:41:27 -0600</lastBuildDate>
+		
+			<atom:link href="https://www.sapuglha.com/tags/git/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>How I Git</title>
+				<link>https://www.sapuglha.com/posts/2018-06-11-how-i-git/</link>
+				<pubDate>Mon, 11 Jun 2018 00:41:27 -0600</pubDate>
+				<guid>https://www.sapuglha.com/posts/2018-06-11-how-i-git/</guid>
+				<description>Blah</description>
+			</item>
+	</channel>
+</rss>
